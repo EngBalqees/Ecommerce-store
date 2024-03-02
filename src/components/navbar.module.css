@@ -1,0 +1,50 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0px 1.64744px 8.2372px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    background-color: #a05858;
+    transition: 0.8s;
+  }
+  .container{
+    display: flex;
+    gap: 700px;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--Grey-15, #ffffff);
+  font-family: Be Vietnam Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+  .authContainer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .authContainer a{
+    text-decoration: none;
+    color: var(--Grey-15, #ffffff);
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 27px */
+    padding: 14px 10px;
+  }

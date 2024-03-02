@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    display: flex;
+    width: calc(100% - 162px);
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+}
+.title{
+    padding-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    gap:30px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.home .title h1{
+    color: var(--Grey-15, #a05858);
+    font-family:fantasy;
+    font-size: 35px;
+    font-style: normal;
+    align-self: center;
+    font-weight: 700;
+
+}
+.title img{
+    width: 80%;
+}
+.container{
+    display: flex;
+    align-items: flex-end;
+    gap: 100px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.categories{
+    display: flex;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+}
+.categories button{
+    border-radius: 50px;
+    border-color: #a05858;
+    padding: 10px 14px;
+    box-shadow: #db8080;
+}
