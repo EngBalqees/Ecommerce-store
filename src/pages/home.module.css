@@ -36,7 +36,8 @@ body{
 .container{
     display: flex;
     align-items: flex-end;
-    gap: 100px;
+    padding-top: 30px;
+    gap: 40px;
     align-self: stretch;
     flex-wrap: wrap;
 }
@@ -45,12 +46,6 @@ body{
     padding: 20px 20px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     flex: 1 0 0;
-}
-.categories button{
-    border-radius: 50px;
-    border-color: #a05858;
-    padding: 10px 14px;
-    box-shadow: #db8080;
 }

@@ -2,16 +2,22 @@ import React, { useState } from "react";
 import style from "./home.module.css";
 import { useEffect } from "react";
 import axios from "axios";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 function Home() {
     const [categories, setCategories] = useState([]);
     const getCategories = async () => {
-        const { data } = await axios.get('https://ecommerce-node4.vercel.app/categories/active?page=1&limit=10');
+        const { data } = await axios.get(`${import.meta.env.VITE_API}/categories/active?limit=10`);
         console.log(data);
         setCategories(data.categories);
     }
     useEffect(() => {
         getCategories();
     }, [])
+    /*let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+      let path = `/categoryproducts/${categories._id}`; 
+      navigate(path);
+    }*/
 
     return (
         <>
@@ -23,7 +29,8 @@ function Home() {
                 <div className={style.container}>
                     {categories.map(categories =>
                         <div className={style.categories} key={categories.id}>
-                            <button><img src={categories.image.secure_url} /></button>
+                           <img src={categories.image.secure_url} />
+                           <Link to ={`./categoryproducts/${categories.id}`}>Show Products</Link>
                         </div>
                     )}
                 </div>
