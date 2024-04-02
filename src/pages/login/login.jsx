@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./login.css"
-import Navbar from "../components/navbar";
 import { jwtDecode } from "jwt-decode";
-
+import { Link, Navigate } from "react-router-dom";
+import SendCodeOverlay from "./sendcode";
 export default function Login() {
    const [user, setUser] = useState({
       email: '',
@@ -13,17 +13,18 @@ export default function Login() {
       password: user.password;
    }
 
-   /*if(data.message=="success"){
-      toast.success("login successfully",{
-   
-      })
-   }*/
    const handlechange = (e) => {
       const { name, value } = e.target;
       setUser({
          ...user,
          [name]: value
       });
+   };
+   const [showSendCodeOverlay, setShowSendCodeOverlay] = useState(false);
+  
+
+   const toggleSendCodeOverlay = () => {
+      setShowSendCodeOverlay(!showSendCodeOverlay);
    };
 
    return (
@@ -40,7 +41,6 @@ export default function Login() {
                   onChange={handlechange}
                   className={'inputBox'}
                />
-               <label className="errorLabel"></label>
             </div>
             <br />
             <div className={'inputContainer'}>
@@ -50,12 +50,11 @@ export default function Login() {
                   onChange={handlechange}
                   className={'inputBox'}
                />
-               <label className="errorLabel"></label>
             </div>
             <br />
-
             <button onClick={handleSubmit}>Log In</button>
-
+            <button onClick={toggleSendCodeOverlay}>Forget Password?</button>
+            {showSendCodeOverlay && <SendCodeOverlay onClose={toggleSendCodeOverlay} />}
          </div>
       </>
    )

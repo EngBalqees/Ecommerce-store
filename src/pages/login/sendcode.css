@@ -1,0 +1,61 @@
+.overlay {
+    position: fixed;
+    top: 10;
+    left: 10;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;    
+  }
+  .overlay-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .overlay .close{
+    width: 10px;
+    height: 10px;
+    color: #000;
+    background-color: white;
+    border-color: aliceblue;
+    align-self: flex-end;
+  }
+  .overlay h2{
+    font-size: 25px;
+    padding-top: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .overlay button{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    width: 150px;
+  }
+  .overlay label {
+    font-size: 17px;
+    font-weight:800;
+    padding-bottom: 10px;
+    width: 120px;
+  }
+  .overlay input{
+    width: 250px;
+    height: 30px;
+  }
+  .overlay-content .newPass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

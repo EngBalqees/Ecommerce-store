@@ -1,0 +1,135 @@
+footer {
+    margin-top: 60px;
+    background-color: #a05858;
+}
+
+footer .footer-container {
+    padding: 40px 107px 30px 107px;
+    width: calc(100% - 162px);
+    margin: auto;
+}
+
+footer .row {
+    display: flex;
+    width: calc(100% - 12px);
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 40px;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+footer .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.left-side .logo {
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--Orange-50, #FF9500);
+}
+
+.left-side .links {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.left-side .links ul li {
+    display: flex;
+    gap: 7px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--Grey-15, #ffffff);
+    font-family: Be Vietnam Pro;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+}
+
+footer .right-side {
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.right-side .footer-item {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    flex: 1 0 0;
+}
+
+.footer-item h3 {
+    color: var(--Grey-15, #ffffff);
+    font-family: Be Vietnam Pro;
+    font-size: 20px;
+    font-style: normal;
+    align-self: stretch;
+}
+
+.footer-item nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: var(--Grey-35, #e7e7e7);
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    font-style: normal;
+    align-self: stretch;
+}
+.footer-item button{
+    border-color: #a05858;
+    width: 14px;
+    height: 14px;
+}
+.footer-item button img {
+    width: 34px;
+    height: 34px;
+}
+
+footer .line {
+    width: 1196px;
+    height: 1px;
+    background: #F1F1F3;
+}
+
+footer .text {
+    align-content: center;
+    padding-top: 10px;
+    margin: auto;
+    color: var(--Grey-40, #cccccc);
+    text-align: center;
+    font-family: Be Vietnam Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+
+}
+

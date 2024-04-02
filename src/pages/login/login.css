@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    gap: 5px;
   }
   
   .titleContainer {
@@ -14,25 +15,7 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .resultContainer,
-  .historyItem {
-    flex-direction: row;
-    display: flex;
-    width: 400px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .historyContainer {
-    flex-direction: column;
-    display: flex;
-    height: 200px;
-    align-items: center;
-    flex-grow: 5;
-    justify-content: flex-start;
-  }
-  
+   
   .inputContainer {
     display: flex;
     flex-direction: column;
@@ -44,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:10px;
+    padding:30px;
     background-color: #a05858;
     border-radius: 10px;
     height: 48px;
@@ -52,7 +35,7 @@
     font-size: large;
     border: 1px solid grey;
     color: azure;
-
+  
   }
   .inputContainer > .errorLabel {
     color: red;
@@ -67,3 +50,4 @@
     border: 1px solid grey;
     padding-left: 8px;
   }
+ 

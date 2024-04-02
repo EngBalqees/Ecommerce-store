@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.home{
+    display: flex;
+    width: calc(100% - 162px);
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+}
+.title{
+    padding-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    gap:30px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.home .title h1{
+    color: var(--Grey-15, #a05858);
+    font-family:fantasy;
+    font-size: 35px;
+    font-style: normal;
+    align-self: center;
+    font-weight: 700;
+
+}
+.title img{
+    width: 80%;
+}
+.container{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 30px;
+    gap: 40px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.products{
+    display: flex;
+    padding: 20px 20px;
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+}
+.products .product{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-content: flex-start;
+    flex: 1 0 0;
+    gap: 5px;
+}
+.product h3{
+    color: var(--Grey-15, #a05858);
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+.product img{
+    height: 300px;
+    width: 250px;
+    border-radius: 25px;
+}
+.products .unitprices{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.products .price{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.unitprices img{
+    width: 40px;
+}

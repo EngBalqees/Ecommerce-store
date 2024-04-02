@@ -8,7 +8,7 @@ function Navbar() {
         <nav className={style.navbar}>
           <ul>
             <li>
-              <Link to ="/home" className="active">
+              <Link to ="./home/home" className="active">
                 Home
               </Link>
             </li>
@@ -16,7 +16,7 @@ function Navbar() {
               <Link to ="">Categories</Link>
             </li>
             <li>
-            <Link to ="">Products</Link>
+            <Link to ="./products/products">Products</Link>
             </li>
             <li>
             <Link to ="">Cart</Link>
@@ -28,8 +28,8 @@ function Navbar() {
         </nav>
         <div className={style.authContainer}>
           <ul>
-            <li><Link to="/login">Log In</Link></li>
-            <li><Link to="/register">Register</Link></li>
+            <li><Link to="./login/login">Log In</Link></li>
+            <li><Link to="./register/register">Register</Link></li>
           </ul>
         </div>
 
