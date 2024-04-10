@@ -33,11 +33,11 @@ export default function Products() {
                                 <div className={style.price}>
                                     <span>Unit Price: {products.price}$</span>
                                     <span>Discount: {products.discount}%</span>
-                                    <Link to={`/product/${products._id}`}>Product Details</Link>
+                                   
                                 </div>
                                <Link><img src="/cart.png" /></Link> 
                             </div>
-                            <button>Product Details</button>
+                            <button> <Link to={`/product/${products._id}`}>Product Details</Link></button>
                         </div>
                     )}
                 </div>

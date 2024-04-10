@@ -38,10 +38,9 @@ export default function CategoryProducts() {
                              <span>Discount: {products.discount}%</span>
                          </div>
                         <Link><img src="/cart.png" /></Link> 
-                        <Link to={`/product/${products._id}`}>Product Details</Link>
                      </div>
                     
-                     <button key={products._id}>Product Details</button>
+                     <button > <Link to={`/product/${products._id}`}>Product Details</Link></button>
                  </div>
                 )}
             </div>

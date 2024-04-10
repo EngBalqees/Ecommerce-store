@@ -29,8 +29,8 @@ function Home() {
                 <div className={style.container}>
                     {categories.map(categories =>
                         <div className={style.categories} key={categories.id}>
-                           <img src={categories.image.secure_url} />
-                           <Link to ={`./categoryproducts/${categories.id}`}>Show Products</Link>
+                            <Link to ={`./categoryproducts/${categories.id}`}>
+                           <img src={categories.image.secure_url} /></Link>
                         </div>
                     )}
                 </div>
