@@ -1,10 +1,10 @@
 import React from "react";
 import style from "./products.module.css"
-import { useEffect, useState } from "react";
+import { useEffect, useState, createContext } from "react";
 import axios from "axios";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import ProductOverlay from "../product/product";
-
+import Loader from '../../components/looder';
 export default function Products() {
     const [products, setProducts] = useState([]);
     const getProducts = async () => {
@@ -15,6 +15,23 @@ export default function Products() {
     useEffect(() => {
         getProducts();
     }, [])
+    const [loading, setLoading] = useState([]);
+    const addToCart = async (productId) => {
+        const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/cart`, {
+            productId
+        });
+        console.log(data);
+        console.log("cart");
+        /* setLoading(true);
+         try{
+             const token = localStorage.getItem('userToken');
+            
+                 
+             }catch(error){
+                 console.log(error);
+         }*/
+    }
+
 
     return (
         <>
@@ -33,11 +50,11 @@ export default function Products() {
                                 <div className={style.price}>
                                     <span>Unit Price: {products.price}$</span>
                                     <span>Discount: {products.discount}%</span>
-                                   
                                 </div>
-                               <Link><img src="/cart.png" /></Link> 
+                                <button onClick={() => addToCart(products.id)}><img src="/cart.png" /></button>
+                                <button> <Link to={`/product/${products.id}`}>Product Details</Link></button>
                             </div>
-                            <button> <Link to={`/product/${products._id}`}>Product Details</Link></button>
+
                         </div>
                     )}
                 </div>

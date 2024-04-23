@@ -27,7 +27,7 @@ export default function Footer() {
                                                 fill="#262626"
                                             />
                                         </svg>
-                                        <a href="#">hello@skillbridge.com</a>
+                                        <a href="#">balqeessuker@gmail.com</a>
                                     </li>
                                     <li>
                                         <svg
@@ -44,7 +44,7 @@ export default function Footer() {
                                                 fill="#262626"
                                             />
                                         </svg>
-                                        <a href="#">+91 91813 23 2309</a>
+                                        <a href="#">0569664251</a>
                                     </li>
                                     <li>
                                         <svg
@@ -61,7 +61,7 @@ export default function Footer() {
                                                 fill="#262626"
                                             />
                                         </svg>
-                                        <a href="#">Somewhere in the World</a>
+                                        <a href="#">Azzoun/Qaliqilia/Palestine</a>
                                     </li>
                                 </ul>
                             </div>
@@ -70,10 +70,10 @@ export default function Footer() {
                             <div className="footer-item">
                                 <h3>Home</h3>
                                 <nav>
-                                    <a href="#">Benefites </a>
-                                    <a href="#">Our Courses</a>
-                                    <a href="#">Our Testimonials</a>
-                                    <a href="#">Our FAQ</a>
+                                    <a href="#">Products </a>
+                                    <a href="#">Categories</a>
+                                    <a href="#">Cart</a>
+                                    <a href="#">Contact</a>
                                 </nav>
                             </div>
                             <div className="footer-item">

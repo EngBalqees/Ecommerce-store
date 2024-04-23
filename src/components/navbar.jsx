@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import style from './navbar.module.css';
+import { useContext } from 'react';
 
 function Navbar() {
+  
   return (
     <header>
       <div className={style.container}>
